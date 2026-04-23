@@ -1,45 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Courses</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Admission & Contact | Satic Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Fix for Select Options Visibility */
+        select option {
+            background-color: #0f172a; /* Same as your bg-dark */
+            color: white;
+            padding: 10px;
+        }
+        
+        /* Dropdown arrow fix */
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">SATIC INSTITUTE</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Our Courses</a></li>
+            <li><a href="contact.html" class="active">Admission</a></li>
+        </ul>
+    </nav>
 
-<div class="navbar">
-  <h1>My Institute</h1>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+    <main class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding-top: 150px;">
+        <div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Admission <span style="color:var(--primary)">Cell</span></h2>
+            <p style="margin:20px 0; color:var(--text-dim);">
+                Please select your preferred course and fill out the details. Our academic counselor will reach out to you within 24 hours.
+            </div>
+        </div>
 
-<div class="container">
+        <div class="glass-card">
+            <h3>Enquiry Form</h3>
+            <form style="margin-top:20px;">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                
+                <select id="course-select" required style="width:100%; padding:15px; background:var(--glass); border:1px solid var(--border); border-radius:12px; color:white; margin-bottom:20px;">
+                    <option value="" disabled selected>Select Your Course</option>
+                    <option value="cs">Computer Science & IT</option>
+                    <option value="business">Business Management</option>
+                    <option value="design">Graphic & UI/UX Design</option>
+                    <option value="data">Data Science & AI</option>
+                    <option value="marketing">Digital Marketing</option>
+                </select>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Web Development</h3>
-      <p>HTML, CSS, JS</p>
-    </div>
+                <textarea placeholder="Your Message or Questions" rows="4"></textarea>
+                <button type="submit" class="btn" style="width:100%">Submit Application</button>
+            </form>
+        </div>
+    </main>
 
-    <div class="card">
-      <h3>Python</h3>
-      <p>Beginner to Advanced</p>
-    </div>
-
-    <div class="card">
-      <h3>UI/UX Design</h3>
-      <p>Modern design principles</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="footer">
-  © 2026 My Institute
-</div>
-
+    <footer>&copy; 2026 Satic Institute | Excellence in Education</footer>
 </body>
 </html>
