@@ -2,40 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Our Institute</title>
     <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Satic Institute</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">SATIC INSTITUTE</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="courses.html">Our Courses</a></li>
-            <li><a href="contact.html">Admission</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">Satic<span>Institute</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container">
-        <h1 class="section-title">About Our Institute</h1>
-        <div class="grid">
-            <div class="glass-card">
-                <h3 style="color:var(--primary)">Our Legacy</h3>
-                <p style="margin-top:15px; color:var(--text-dim)">
-                    Satic Institute pichle 10 saalo se quality education provide kar raha hai. 
-                    Hamara campus modern labs aur library se equipped hai jo students ki growth mein madad karta hai.
-                </p>
-            </div>
-            <div class="glass-card">
-                <h3 style="color:var(--secondary)">Principal's Message</h3>
-                <p style="margin-top:15px; color:var(--text-dim)">
-                    "Humara maqsad sirf degrees dena nahi, balki students ko kal ke challenges ke liye 
-                    taiyaar karna hai." - Prof. Satic
-                </p>
-            </div>
-        </div>
+        <h1>Get in Touch</h1>
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </main>
 
-    <footer>&copy; 2026 Satic Institute</footer>
+    <footer><p>&copy; 2024 Satic Institute</p></footer>
 </body>
 </html>
