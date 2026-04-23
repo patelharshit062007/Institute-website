@@ -2,49 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admission & Contact</title>
     <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Satic Institute</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">SATIC INSTITUTE</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="courses.html">Our Courses</a></li>
-            <li><a href="contact.html" class="active">Admission</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">Satic<span>Institute</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
-        <div>
-            <h2>Admission Cell</h2>
-            <p style="margin:20px 0; color:var(--text-dim);">
-                You can fill out the form below for admission. 
-                Our team will call you regarding the batch timings and fees.
-          </p>
-            <div class="glass-card">
-                <p>📍 Location: Ahmedabad</p>
-                <p>📞 Phone: +91 9328517842</p>
-            </div>
-        </div>
-
-        <div class="glass-card">
-            <h3>Enquiry Form</h3>
-            <form style="margin-top:20px;">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <select style="width:100%; padding:15px; background:var(--glass); border:1px solid var(--border); border-radius:12px; color:white; margin-bottom:20px;">
-                    <option>Select Course</option>
-                    <option>Computer Science</option>
-                    <option>Business Management</option>
-                </select>
-                <textarea placeholder="Your Message" rows="4"></textarea>
-                <button type="submit" class="btn" style="width:100%">Submit Application</button>
-            </form>
-        </div>
+    <main class="container">
+        <h1>Get in Touch</h1>
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </main>
 
-    <footer>&copy; 2026 Satic Institute</footer>
+    <footer><p>&copy; 2024 Satic Institute</p></footer>
 </body>
 </html>
